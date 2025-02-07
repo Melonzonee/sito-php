@@ -33,21 +33,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
 
     if (valid) {
-        const userData = { name: nome, surname: surname, email: email };
-        localStorage.setItem('userData', JSON.stringify(userData));
-        
-        const blob = new Blob([JSON.stringify(userData, null, 2)], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
-        
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'userData.json';
-        a.click();
-        
-        URL.revokeObjectURL(url);
-        
         alert("Dati salvati e scaricati con successo!");
-        
         location.href = 'newPage.html';
     }
 });

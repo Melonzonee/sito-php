@@ -10,7 +10,7 @@
 <body>
 
     <video autoplay muted loop id="background-video" class="w-100">
-        <source src="video sito/viaggio.mp4" type="video/mp4">
+        <source src="viaggio.mp4" type="video/mp4">
     </video>
     
     <div class="container mt-4">

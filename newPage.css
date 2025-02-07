@@ -1,0 +1,95 @@
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+
+#destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.destination {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+
+.destination img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.destination p {
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #34495e;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content img {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.popup-content h2 {
+    color: #34495e;
+    font-size: 24px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.back-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+}
